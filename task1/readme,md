@@ -1,1 +1,104 @@
-task1 file
+# 🚢 Titanic Survival Prediction
+
+This project predicts whether a passenger survived the Titanic disaster using Machine Learning techniques.
+
+---
+
+## 📌 Dataset
+
+The dataset contains information about passengers such as:
+
+* Age
+* Gender
+* Ticket class (Pclass)
+* Fare
+* Number of siblings/spouses (SibSp)
+* Number of parents/children (Parch)
+* Port of embarkation
+
+---
+
+## ⚙️ Steps Performed
+
+### 1. Data Cleaning
+
+* Handled missing values in Age and Embarked
+* Dropped irrelevant columns like Cabin, Name, Ticket
+
+### 2. Feature Engineering
+
+* Created a new feature **FamilySize**:
+
+  * `FamilySize = SibSp + Parch + 1`
+* This helps capture family relationships and their impact on survival
+
+### 3. Encoding
+
+* Converted categorical variables (Sex, Embarked) into numerical form
+
+### 4. Exploratory Data Analysis (EDA)
+
+* Visualized survival trends based on:
+
+  * Gender
+  * Passenger class
+  * Age
+  * Fare
+  * Family size
+
+### 5. Model Building
+
+* Trained a **Logistic Regression** model
+
+### 6. Model Evaluation
+
+* Evaluated using accuracy score
+
+---
+
+## 🤖 Model Used
+
+* Logistic Regression
+
+---
+
+## 📊 Results
+
+* Model Accuracy: ~80–85%
+* Feature engineering improved model understanding and performance
+
+---
+
+## 🚀 Tools & Technologies
+
+* Python
+* Pandas
+* NumPy
+* Seaborn & Matplotlib
+* Scikit-learn
+* Google Colab
+
+---
+
+## 📁 Project Structure
+
+* `Titanic_Survival.ipynb` → Main notebook
+
+---
+
+## 💡 Key Insights
+
+* Female passengers had a higher survival rate
+* Higher-class passengers were more likely to survive
+* Passengers traveling alone had different survival patterns compared to families
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates how basic data preprocessing and feature engineering can significantly improve the performance of a machine learning model.
+
+---
+
+⭐ If you found this project helpful, consider giving it a star!
+
